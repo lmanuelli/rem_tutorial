@@ -3,8 +3,8 @@
 A sandbox Python project for learning modern Python development.
 
 > **New here?** Follow these steps in order:
-> 1. [Getting the Code](#getting-the-code) — clone the repository to your machine
-> 2. [Prerequisites](#prerequisites) — install Python and uv
+> 1. [Prerequisites](#prerequisites) — install Git, Python, and uv
+> 2. [Getting the Code](#getting-the-code) — clone the repository to your machine
 > 3. [Setup](#setup) — install project dependencies
 
 ---
@@ -23,16 +23,28 @@ A sandbox Python project for learning modern Python development.
 
 ## Prerequisites
 
-You need two things installed on your machine before anything else:
+You need three things installed on your machine before anything else:
 
-1. **Python 3.11+** — Install via [Homebrew](https://brew.sh) (recommended on Mac):
+1. **Git** — Install via [Homebrew](https://brew.sh) (recommended on Mac):
 
    First, install Homebrew if you don't have it (paste this into Terminal):
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-   Then install Python:
+   Then install Git:
+   ```bash
+   brew install git
+   ```
+
+   Verify the installation:
+   ```bash
+   git --version
+   ```
+   You should see something like `git version 2.x.x`.
+
+2. **Python 3.11+** — Install via Homebrew:
+
    ```bash
    brew install python
    ```
@@ -43,7 +55,7 @@ You need two things installed on your machine before anything else:
    ```
    You should see something like `Python 3.13.x`. As long as it's 3.11 or higher, you're good.
 
-2. **uv** — A fast Python package manager. Install it by running this in your terminal:
+3. **uv** — A fast Python package manager. Install it by running this in your terminal:
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
@@ -141,17 +153,7 @@ rem_tutorial/
 
 ## Getting the Code
 
-### 1. Check that Git is installed
-
-Git comes pre-installed on Macs — you can verify by running:
-
-```bash
-git --version
-```
-
-If macOS hasn't installed the developer tools yet, it will pop up a dialog asking if you'd like to install them. Click **Install** and wait for it to finish, then re-run the command above.
-
-### 2. Set up SSH authentication with GitHub
+### 1. Set up SSH authentication with GitHub
 
 Cloning over SSH is the recommended approach. If you haven't done this before, follow GitHub's official guide:
 
@@ -159,7 +161,7 @@ Cloning over SSH is the recommended approach. If you haven't done this before, f
 
 The guide walks you through creating a key pair and uploading the public key to your GitHub account. You only need to do this once per machine.
 
-### 3. Clone the repository
+### 2. Clone the repository
 
 Navigate to the folder where you'd like to keep the project (e.g. your home directory or a `projects/` folder), then run:
 
