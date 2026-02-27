@@ -84,6 +84,24 @@ Type `exit` or press `Ctrl-D` to quit.
 
 ---
 
+## Formatting
+
+This project uses [Black](https://black.readthedocs.io/) to automatically format code to a consistent style.
+
+**Run it manually** from the `rem_tutorial/` folder:
+
+```bash
+uv run black src/
+```
+
+Black will reformat any files that need changes and tell you what it touched.
+
+**In VSCode** — formatting happens automatically on every save. The first time you open the project, VSCode will prompt you to install the recommended extensions; accept the prompt and install the **Black Formatter** extension (`ms-python.black-formatter`). After that, just save a file (`Cmd-S`) and Black will tidy it up instantly.
+
+You can also trigger formatting manually at any time with `Shift-Alt-F` (or `Shift-Option-F` on Mac).
+
+---
+
 ## Project Structure
 
 ```
