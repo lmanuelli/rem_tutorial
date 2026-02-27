@@ -21,11 +21,15 @@ uv run python -c "import rem; print(rem.__version__)"
 uv run black src/
 
 # Run all tests
-uv run pytest
+uv run python -m pytest
 
 # Run a single test file
-uv run pytest tests/test_imports.py
+uv run python -m pytest src/rem/tests/test_imports.py
 ```
+
+## Git Workflow
+
+Never commit unless explicitly asked to. After making changes, stop and wait for instruction.
 
 ## Before Committing
 
@@ -33,12 +37,12 @@ Always run these two commands before committing, and ensure both pass:
 
 ```bash
 uv run black src/
-uv run pytest
+uv run python -m pytest
 ```
 
 ## Writing Tests
 
-Add tests for any new code you write. Test files live in `tests/` and must be named `test_*.py`. Each test is a plain function named `test_*` — no classes needed.
+Add tests for any new code you write. Test files live in `src/rem/tests/` and must be named `test_*.py`. Each test is a plain function named `test_*` — no classes needed.
 
 ## Architecture
 
