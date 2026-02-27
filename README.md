@@ -2,6 +2,23 @@
 
 A sandbox Python project for learning modern Python development.
 
+> **New here?** Follow these steps in order:
+> 1. [Getting the Code](#getting-the-code) — clone the repository to your machine
+> 2. [Prerequisites](#prerequisites) — install Python and uv
+> 3. [Setup](#setup) — install project dependencies
+
+---
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running Examples](#running-examples)
+- [Interactive Python](#interactive-python)
+- [Formatting](#formatting)
+- [Project Structure](#project-structure)
+- [Getting the Code](#getting-the-code)
+
 ---
 
 ## Prerequisites
@@ -36,7 +53,7 @@ You need two things installed on your machine before anything else:
 
 ## Setup
 
-Clone (or download) this project, then open a terminal in the `rem_tutorial/` folder and run:
+Once you have the code (see [Getting the Code](#getting-the-code)), open a terminal in the `rem_tutorial/` folder and run:
 
 ```bash
 uv sync --extra dev
@@ -119,3 +136,41 @@ rem_tutorial/
 - **`pyproject.toml`** is the single source of truth for the project. No `requirements.txt` needed.
 - **`src/` layout** keeps your package code separate from project-level files, preventing accidental imports.
 - **`uv run`** always uses the project's own environment, so you never have to worry about which Python is active.
+
+---
+
+## Getting the Code
+
+### 1. Check that Git is installed
+
+Git comes pre-installed on Macs — you can verify by running:
+
+```bash
+git --version
+```
+
+If macOS hasn't installed the developer tools yet, it will pop up a dialog asking if you'd like to install them. Click **Install** and wait for it to finish, then re-run the command above.
+
+### 2. Set up SSH authentication with GitHub
+
+Cloning over SSH is the recommended approach. If you haven't done this before, follow GitHub's official guide:
+
+[Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+The guide walks you through creating a key pair and uploading the public key to your GitHub account. You only need to do this once per machine.
+
+### 3. Clone the repository
+
+Navigate to the folder where you'd like to keep the project (e.g. your home directory or a `projects/` folder), then run:
+
+```bash
+git clone git@github.com:lmanuelli/rem_tutorial.git
+```
+
+This creates a `rem_tutorial/` folder with all the code inside. Then:
+
+```bash
+cd rem_tutorial
+```
+
+From here, continue with [Setup](#setup).
