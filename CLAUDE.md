@@ -16,6 +16,17 @@ uv run ipython
 
 # Check the installed package version
 uv run python -c "import rem; print(rem.__version__)"
+
+# Format all source code (run this before every commit)
+uv run black src/
+```
+
+## Before Committing
+
+Always run the formatter before committing:
+
+```bash
+uv run black src/
 ```
 
 ## Architecture
