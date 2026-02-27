@@ -17,17 +17,28 @@ uv run ipython
 # Check the installed package version
 uv run python -c "import rem; print(rem.__version__)"
 
-# Format all source code (run this before every commit)
+# Format all source code
 uv run black src/
+
+# Run all tests
+uv run pytest
+
+# Run a single test file
+uv run pytest tests/test_imports.py
 ```
 
 ## Before Committing
 
-Always run the formatter before committing:
+Always run these two commands before committing, and ensure both pass:
 
 ```bash
 uv run black src/
+uv run pytest
 ```
+
+## Writing Tests
+
+Add tests for any new code you write. Test files live in `tests/` and must be named `test_*.py`. Each test is a plain function named `test_*` — no classes needed.
 
 ## Architecture
 
