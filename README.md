@@ -8,7 +8,24 @@ A sandbox Python project for learning modern Python development.
 
 You need two things installed on your machine before anything else:
 
-1. **Python 3.11+** — Download from [python.org](https://www.python.org/downloads/)
+1. **Python 3.11+** — Install via [Homebrew](https://brew.sh) (recommended on Mac):
+
+   First, install Homebrew if you don't have it (paste this into Terminal):
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+   Then install Python:
+   ```bash
+   brew install python
+   ```
+
+   Verify the installation:
+   ```bash
+   python3 --version
+   ```
+   You should see something like `Python 3.13.x`. As long as it's 3.11 or higher, you're good.
+
 2. **uv** — A fast Python package manager. Install it by running this in your terminal:
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
