@@ -176,6 +176,12 @@ rem_tutorial/
 
 ## Getting the Code
 
+The steps below show you how to setup SSH authentication which is the right long term approach. But an easier way to get started is to just use HTTPS to clone the repository.
+
+```
+git clone https://github.com/lmanuelli/rem_tutorial.git
+```
+
 ### 1. Set up SSH authentication with GitHub
 
 Cloning over SSH is the recommended approach. If you haven't done this before, follow GitHub's official guide:
