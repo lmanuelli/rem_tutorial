@@ -16,6 +16,7 @@ A sandbox Python project for learning modern Python development.
 - [Running Examples](#running-examples)
 - [Interactive Python](#interactive-python)
 - [Formatting](#formatting)
+- [Claude Code VSCode Extension](#claude-code-vscode-extension)
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
 - [Getting the Code](#getting-the-code)
@@ -129,6 +130,26 @@ Black will reformat any files that need changes and tell you what it touched.
 **In VSCode** — formatting happens automatically on every save. The first time you open the project, VSCode will prompt you to install the recommended extensions; accept the prompt and install the **Black Formatter** extension (`ms-python.black-formatter`). After that, just save a file (`Cmd-S`) and Black will tidy it up instantly.
 
 You can also trigger formatting manually at any time with `Shift-Alt-F` (or `Shift-Option-F` on Mac).
+
+---
+
+## Claude Code VSCode Extension
+
+[Claude Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) is an AI coding assistant that integrates directly into VSCode.
+
+**Install it:**
+
+1. Press `Cmd+Shift+X` to open the Extensions panel
+2. Search for **Claude Code**
+3. Click **Install** (extension ID: `anthropic.claude-code`)
+
+Or install from the command line:
+
+```bash
+code --install-extension anthropic.claude-code
+```
+
+After installation, sign in with your Anthropic account and click the Claude icon in the editor toolbar to get started.
 
 ---
 
